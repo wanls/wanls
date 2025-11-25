@@ -1,22 +1,31 @@
-
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>hello</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 56.25%; /* 16:9 的比例 (9/16 = 0.5625) */
+    }
+    
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    </style>
 <body>
 
-  <iframe 
-  src="https://hhai.tvykno.cn/h5play?key=728eabff0c9839" 
-  width="100%" 
-  height="100%" 
-  frameborder="0"
-  sandbox="allow-same-origin allow-scripts"
-  loading="lazy">
-  <p>您的浏览器不支持 iframe。</p>
-</iframe>
 
+    <div class="iframe-container">
+        <iframe src="https://l.shhw.xxbreadcc5.cn" frameborder="0"></iframe>
+      </div>
 </body>
 </html>
